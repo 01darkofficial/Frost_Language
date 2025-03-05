@@ -1,0 +1,34 @@
+// Test: Simple variable declaration
+// expect: 42
+var a = 42;
+print(a);
+
+// Test: Multiple variable declarations
+// expect: Hello
+// expect: 3.14
+var b = "Hello";
+var c = 3.14;
+print(b);
+print(c);
+
+// Test: Variable reassignment
+// expect: 10
+var d = 5;
+d = 10;
+print(d);
+
+
+{
+  // expect: a
+  var a = "a";
+  print(a);
+  // expect: a b
+  var b = a + " b";
+  print(b); 
+  // expect: a c
+  var c = a + " c";
+  print(c); 
+  // expect: a b d
+  var d = b + " d";
+  print(d); 
+}

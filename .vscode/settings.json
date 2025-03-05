@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "utility": "c",
+    "xutility": "c",
+    "compare": "c",
+    "memory": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "xmemory": "c",
+    "xtr1common": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}

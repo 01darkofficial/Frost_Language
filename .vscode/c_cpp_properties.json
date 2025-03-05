@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Windows",
+      "compilerPath": "C:\\Dev_Tools\\LLVM\\clang\\bin\\clang.exe",
+      "cStandard": "c17",
+      "intelliSenseMode": "clang-x64"
+    },
+    {
+      "name": "Linux",
+      "compilerPath": "C:\\Dev_Tools\\LLVM\\clang\\bin\\clang.exe", // Adjust according to your system
+      "cStandard": "c17",
+      "intelliSenseMode": "linux-clang-x64"
+    }
+  ],
+  "version": 4
+}
