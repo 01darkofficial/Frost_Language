@@ -584,11 +584,12 @@ static void ifStatement()
     consume(TOKEN_LEFT_PAREN, "Expect '(' after 'if'.");
     expression();
     consume(TOKEN_RIGHT_PAREN, "Expect ')' after condition.");
-    // consume(TOKEN_LEFT_BRACE, "Expect '{' after expression");
+
     int thenJump = emitJump(OP_JUMP_IF_FALSE);
     emitByte(OP_POP);
-    declaration();
-    // consume(TOKEN_LEFT_BRACE, "Expect '}' after statement");
+
+    statement();
+
     int elseJump = emitJump(OP_JUMP);
 
     patchJump(thenJump);
@@ -596,7 +597,7 @@ static void ifStatement()
 
     if (match(TOKEN_ELSE))
     {
-        declaration();
+        statement();
     }
     patchJump(elseJump);
 }
