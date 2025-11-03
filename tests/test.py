@@ -1,5 +1,6 @@
 import os
 import subprocess
+import platform
 
 def read_expected_output(file_path):
     """
@@ -94,9 +95,12 @@ def run_tests(interpreter_path, test_dir):
 
 
 if __name__ == "__main__":
-    # Path to your interpreter executable
-    interpreter_path = "./build/frost.exe"  # Replace with your interpreter path
-    # Path to the test directory
-    test_dir = "tests"
+    # Detect OS and adjust executable path accordingly
+    if platform.system() == "Windows":
+        interpreter_path = "./build/frost.exe" # Replace with your interpreter path
+    else:
+        interpreter_path = "./build/frost" # Replace with your interpreter path
+    # Path to the test directory 
+        test_dir = "tests"
 
     run_tests(interpreter_path, test_dir)
