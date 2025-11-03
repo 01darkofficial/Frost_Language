@@ -8,7 +8,7 @@
     },
     {
       "name": "Linux",
-      "compilerPath": "C:\\Dev_Tools\\LLVM\\clang\\bin\\clang.exe", // Adjust according to your system
+      "compilerPath": "/usr/bin/clang", // Adjust according to your system
       "cStandard": "c17",
       "intelliSenseMode": "linux-clang-x64"
     }

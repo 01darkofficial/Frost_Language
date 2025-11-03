@@ -8,7 +8,7 @@
         "command": "${workspaceFolder}\\build_and_run.bat"
       },
       "linux": {
-        "command": "${workspaceFolder}\\build_and_run.sh"
+        "command": "${workspaceFolder}/build_and_run.sh"
       },
       "group": {
         "kind": "build",

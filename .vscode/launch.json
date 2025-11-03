@@ -4,14 +4,27 @@
     {
       // For clang (lldb) (Windows)
       "name": "(Windows) Launch",
-      "type": "cppvsdbg",
+      "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/frost.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}/build/",
       "environment": [],
-      "console": "newExternalWindow"
+      "externalConsole": true
+    },
+    {
+      "name": "(Linux) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/frost",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build/",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "lldb",
+      "miDebuggerPath": "/usr/bin/lldb"
     }
   ]
 }
